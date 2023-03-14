@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RESUME_UI</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body{
+        background-color: #9e9a9a;
+      }
+      .a1 {
+        display: flex;
+        justify-content: center;
+        margin: 5px;
+      }
+      .a2 {
+        height: 740px;
+        width: 180px;
+        background-color: rgb(28, 28, 28);
+      }
+      .a3 {
+        background-color: #fff;
+        height: 708px;
+        width: 340px;
+        padding: 15px;
+      }
+      .profile-section {
+        text-align: center;
+        height: 220px;
+        background-color: rgb(14 215 255);
+
+      }
+      #img {
+        height: 120px;
+        clip-path: circle(50% at 50% 50%);
+      }
+      
+      .contact-section {
+        display: flex;
+        background-color: rgba(18, 17, 17, 0.269);
+        margin-top: 12px;
+      }
+      .heading {
+        color: white;
+        margin-top: 15px;
+        text-decoration: underline;
+      }
+      .contact {
+        margin: 8px;
+        margin-bottom: 0px;
+
+        margin-bottom: 0px;
+      }
+      .phone-number {
+        display: flex;
+        margin-top: 20px;
+      }
+      .phone-icon {
+        margin: 15px;
+        margin-top: 5px;
+        height: 20px;
+      }
+      .phone {
+        color: white;
+        margin-top: 3px;
+      }
+      .number {
+        color: white;
+        position: relative;
+        top: 20px;
+        right: 40px;
+      }
+      .mail-iconi {
+        height: 25px;
+        margin: 12px;
+        margin-bottom: 0px;
+        clip-path: circle(50% at 50% 50%);
+      }
+      .email-heading {
+        color: white;
+        position: relative;
+        bottom: 38px;
+        left: 51px;
+      }
+      .email-id {
+        color: white;
+        position: relative;
+        bottom: 35px;
+        left: 50px;
+      }
+      .address-iconi {
+        height: 25px;
+        margin-left: 7px;
+      }
+      .address {
+        position: relative;
+        bottom: 12px;
+      }
+      .education-image {
+        height: 30px;
+        position: relative;
+        bottom: 25px;
+        left: 13px;
+        clip-path: circle(50% at 50% 50%);
+      }
+      .EDUCATION {
+        color: white;
+        position: relative;
+        bottom: 48px;
+        left: 50px;
+        text-decoration: underline;
+      }
+      .arrow {
+        color: white;
+        position: relative;
+        bottom: 35px;
+        left: 18px;
+      }
+      .inter-year {
+        color: white;
+        position: relative;
+        left: 50px;
+        bottom: 54px;
+      }
+      .course-year {
+        color: white;
+        position: relative;
+        left: 50px;
+        bottom: 80px;
+      }
+      .second-arrow {
+        color: white;
+        position: relative;
+        top: 18px;
+        right: 32px;
+      }
+      .language {
+        color: white;
+        text-decoration: underline;
+        position: relative;
+        bottom: 90px;
+        left: 49px;
+      }
+      .language-image {
+        height: 30px;
+        clip-path: circle(50% at 50% 50%);
+        position: relative;
+        bottom: 65px;
+        left: 12px;
+      }
+      .english {
+        color: white;
+        position: relative;
+        bottom: 75px;
+        left: 25px;
+      }
+      .range {
+        height: 8px;
+        width: 70px;
+        background-color: rgb(50, 171, 223);
+        position: relative;
+        bottom: 70px;
+        left: 24px;
+        border-radius: 5px;
+        z-index: 1;
+      }
+      .range-2 {
+        height: 8px;
+        width: 123px;
+        background-color: rgb(57, 51, 51);
+        position: relative;
+        bottom: 78px;
+        left: 24px;
+        border-radius: 5px;
+      }
+      .range-hindi {
+        height: 8px;
+        width: 123px;
+        background-color: rgb(50, 171, 223);
+        position: relative;
+        bottom: 70px;
+        left: 24px;
+        border-radius: 5px;
+        z-index: 1;
+      }
+      .range-2-hindi {
+        height: 8px;
+        width: 123px;
+        background-color: rgb(57, 51, 51);
+        position: relative;
+        bottom: 78px;
+        left: 24px;
+        border-radius: 5px;
+      }
+      .profile-info-text {
+        display: inline;
+        position: relative;
+        bottom: 8px;
+        right: 11px;
+        text-decoration: underline;
+      }
+      .Work-Exprience {
+        position: relative;
+        bottom: 24px;
+        left: 32px;
+        text-decoration: underline;
+      }
+      .profile-info-image {
+        position: relative;
+        right: 7px;
+      }
+      .first-arrow{
+        display: inline-block;
+      }
+      .airte-text{
+        float: right;
+      }
+      .MY-SKILLS-text{
+        text-decoration: underline;
+        font-size: larger;
+        font-weight:500;
+      }
+      .skill-image{
+        /* display: inline-block; */
+        position: relative;
+        top: 3px;
+        right: 2px;
+
+      }
+      .html-range{
+        height: 8px;
+        width: 123px;
+        background-color: rgb(57, 51, 51);
+        border-radius: 5px;
+      }
+      .html-2ndr-ange{
+        position: relative;
+        bottom: 8px;
+        height: 8px;
+        width: 88px;        
+        background-color: rgb(50, 171, 223);
+        border-radius: 5px;
+      }
+      .html-3ndr-ange{
+        position: relative;
+        bottom: 8px;
+        height: 8px;
+        width: 70px;        
+        background-color: rgb(50, 171, 223);
+        border-radius: 5px;
+      }
+      .html-4ndr-ange{
+        position: relative;
+        bottom: 8px;
+        height: 8px;
+        width: 60px;        
+        background-color: rgb(50, 171, 223);
+        border-radius: 5px;
+      }
+      .html-5ndr-ange{
+        position: relative;
+        bottom: 8px;
+        height: 8px;
+        width: 70px;        
+        background-color: rgb(50, 171, 223);
+        border-radius: 5px;
+      }
+      .HOBBIES{
+        display: inline-block;
+      }
+      .hobbi{
+        font-weight: 600;
+
+      }
+      .hobiesss{
+          list-style: none;
+      }
+
+
+      
+    </style>
+  </head>
+  <body>
+    <main class="a1">
+      <div class="a2">
+        <div class="profile-section">
+          <img id="img" src="profile image.jpg" alt="" />
+          <h2 class="name">ARSHAD</h2>
+          <h2 class="name">AHMAD</h2>
+          <h7>WEB DEPLOPER</h7>
+        </div>
+
+        <div class="contact-section">
+          <img
+            class="contact"
+            src="contact-icon.png.png"
+            alt="contact-icon-image"
+            height="33px"
+          />
+          <br />
+          <h4 class="heading">CONTACT</h4>
+        </div>
+
+        <div class="phone-number">
+          <br />
+          <img
+            class="phone-icon"
+            src="telephone.png"
+            alt="phone-number-image"
+          />
+          <h5 class="phone">Phone</h5>
+          <h6 class="number">+917599463959</h6>
+        </div>
+
+        <img class="mail-iconi" src="email icon.png.png" alt="email" />
+        <h5 class="email-heading">Email</h5>
+        <h6 class="email-id">aqib09228@gmail.com</h6>
+
+        <div class="address">
+          <img class="address-iconi" src="icon-house.webp" alt="email" />
+          <h5 class="email-heading">Address</h5>
+          <h6 class="email-id">EWS-48 Tajnagri Agra UP</h6>
+        </div>
+        <div class="education">
+          <img
+            class="education-image"
+            src="study-book.png"
+            alt="education-image"
+          />
+          <h4 class="EDUCATION">EDUCATION</h4>
+          <br />
+          <h4 class="arrow"><></h4>
+          <div class="inter-year">
+            <h5>2020 - 2022</h5>
+            <h5>Intermediate</h5>
+            <h5>by Commerce</h5>
+            <br />
+          </div>
+          <div class="course-year">
+            <h4 class="second-arrow"><></h4>
+            <h5>2022</h5>
+            <h5>F S D Course</h5>
+            <h5>B.com </h5>
+          </div>
+        </div>
+
+        <div class="language-section">
+          <img class="language-image" src="glob.webp" alt="" />
+          <h4 class="language">LANGUAGE</h4>
+          <ul>
+            <li class="english"><h6>ENGLISH</h6></li>
+          </ul>
+          <div class="range"></div>
+          <div class="range-2"></div>
+          <ul>
+            <li class="english"><h6>HINDI</h6></li>
+          </ul>
+          <div class="range-hindi"></div>
+          <div class="range-2-hindi"></div>
+        </div>
+      </div>
+
+      <div class="a3">
+        <div class="profile-info">
+          <img
+            class="profile-info-image"
+            src="contact-icon.png.png"
+            height="32px"
+          />
+          <h3 class="profile-info-text">PROFILE INFO</h3>
+          <!-- <hr/> -->
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi labore
+            dolorum numquam eligendi dolor emque perspiciatis vitae harum
+            voluptatum, rerum a iores eum repellat eos mollitia sunt volup tatem
+            in a officiis? Placeat no Lorem Lorem ipsum dolor great.
+          </p>
+        </div>
+        <br>
+     
+
+        <h4 class="HOBBIES" >></h4> <span class="hobbi" > &nbsp;&nbsp; HOBBIES</span>
+        <hr>
+        <ul>
+          <li class="hobiesss">CRICKET</li>
+          <li class="hobiesss">SINGING</li>
+          <li class="hobiesss">VIDEO GAMING</li>
+          <br>
+        </ul>
+    
+        <hr>
+
+        <div class="work-exprience">
+          <img src="work- exprience.png.png" alt="" height="25px" />
+          <h3 class="Work-Exprience">WORK EXPRIENCE</h3>
+          <h4 class="first-arrow"> <span><></span>  Senior Service Engineer</h5>
+            <span class="airte-text" >2020 - Prsent &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <hr>
+            <p>Working as a  Service Engineer and  team leader in Airtel DTH  Corporate Setup
+              .
+            </p>
+        </div>
+          <br>
+          <img class="skill-image" src="skill.png.png" alt="" height="25px">
+          
+          <span class="MY-SKILLS-text" >MY SKILLS & EXPERTISE</span>
+          <hr>
+          <br> 
+         
+               <h4> HTML</h4> 
+               <div class="html-range" ></div>
+               <div class="html-2ndr-ange"></div>
+               <br>
+               <h4> CSS</h4> 
+              
+               <div class="html-range" ></div>
+               <div class="html-3ndr-ange" ></div>
+               <br>
+
+               <h4> JAVA SCRIPT</h4> 
+              
+               <div class="html-range" ></div>
+               <div class="html-4ndr-ange" ></div>
+               <br>
+               <h4> BOOTSTRAP</h4> 
+              
+               <div class="html-range" ></div>
+               <div class="html-5ndr-ange" ></div>
+               <br>
+               <h4>REACT</h4> 
+              
+               <div class="html-range" ></div>
+               <div class="html-5ndr-ange" ></div>
+               <br>
+               <h4>OOPS IN JAVA </h4> 
+              
+               <div class="html-range" ></div>
+               <div class="html-5ndr-ange" ></div>
+               <br>
+
+
+      </div>
+    </main>
+  </body>
+</html>
